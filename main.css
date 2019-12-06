@@ -98,3 +98,34 @@ header h2{
 .icons{
   background-color: white;
 }
+center{
+	text-align: center;
+}
+.photos1{
+	margin: 5%;
+}
+.wrap
+{
+    width: 80px;
+    margin-top: 30px;
+   
+
+}
+.card
+{
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 10px;
+    float: left;
+  color: black;
+}
+.container
+{
+    padding: 2px 16px;
+}
