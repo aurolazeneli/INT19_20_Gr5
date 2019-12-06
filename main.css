@@ -129,3 +129,71 @@ center{
 {
     padding: 2px 16px;
 }
+footer section
+{
+    width: 100%;
+    margin-top: 4%;
+    display: inline-flex;;
+}
+footer section div h3
+{
+    color: black;
+    font-size: 130%;
+}
+.div1
+{
+    margin-right: 30%;
+    margin-left: 4%;
+}
+.div1 a
+{
+    color: black;
+    text-decoration: none;
+}
+footer section div p
+{
+    color:  #484848;
+    font-size: 120%;
+}
+footer section div input
+{
+    margin:2%;
+    padding: 5%;    
+    color: black;
+    
+}
+#sub1{
+    width: 60%;
+    color:white;
+    background-color: black;
+    border:none;
+    border-radius: 6px;
+    font-size: 130%;
+
+}
+.secfooter
+{
+    background-color: #242729;
+    width: 99.6%;
+    margin-top: 0%;
+    padding: 3px;
+
+}
+#copyright
+{
+    margin-top: 0%;
+
+    color:lightgrey;
+    font-style: italic;
+    padding-top: 5%;
+    font-size: 90%;
+
+
+}
+#end
+{
+    color: lightgrey;
+   font-style: italic;
+   font-size: 90%;
+   
+}
