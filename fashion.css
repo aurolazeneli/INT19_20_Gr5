@@ -1,0 +1,35 @@
+/*Header*/
+body{
+    margin: 0;
+    background-color: #ffe0cc;
+    background-repeat: no-repeat;
+
+}
+#title{
+    color: white;
+}
+.cnav{
+    margin:0;
+      width: 100%;
+}
+
+nav{
+    padding-left: 50%;
+}
+nav ul li
+{    
+
+    list-style: none;
+    display: inline;
+}
+
+nav a
+{color: white;
+    text-decoration: none;
+    padding: 0.25em;
+      
+}
+a:hover{
+    color: black;
+}
+
