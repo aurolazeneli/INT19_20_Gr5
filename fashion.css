@@ -32,4 +32,25 @@ nav a
 a:hover{
     color: black;
 }
+#figborder {
+border: 20px solid white;
+border-color: white;
+margin:6%;
+}
 
+#fig1 {
+
+        width: 18%;
+   
+    
+    margin-top: -14%;
+    
+    margin-left: 31%;
+}
+#fig2{
+    width: 18%;
+
+    margin-top: 3%;
+    
+    margin-left: 59%;
+}
