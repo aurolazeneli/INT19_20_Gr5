@@ -54,3 +54,61 @@ margin:6%;
     
     margin-left: 59%;
 }
+#fig3 {
+
+      width: 18%;
+    margin-top: -14%;
+    margin-left: 30%;
+    margin-bottom: -17%;
+
+}
+#figborder1 {
+border: 20px solid white;
+border-color: white;
+margin:6%;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin-left: 31%;
+  margin-top: 15%;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 150%;
+  height: 150%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
