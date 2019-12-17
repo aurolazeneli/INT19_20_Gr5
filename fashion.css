@@ -1,59 +1,103 @@
 /*Header*/
-body{
-    margin: 0;
-    background-color: #ffe0cc;
-    background-repeat: no-repeat;
+body {
+  margin: 0;
+  background-color: #ffe0cc;
+}
+.nav {
+
+  background: #ffe0cc;
+  margin:0;
+  width:100%;
+}
+header h2
+{
+  font-size: 180%;
+  margin-bottom:0%;
+  margin-top: 3%;
+  color: #877f7d;
+}
+ul {
+
+
+  list-style: none;
+  padding: 0;
+  margin:0;
+  margin-top: -3%;
+  position: absolute;
+  
+}
+ul li {
+
+
+  float:right;
+  margin-top: 20px;
+}
+
+ul li a {
+
+  width:110px;
+  color:gray;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+
 
 }
-#title{
-    color: white;
-}
-.cnav{
-    margin:0;
-      width: 100%;
-}
+a:hover {
 
-nav{
-    padding-left: 50%;
-}
-nav ul li
-{    
 
-    list-style: none;
-    display: inline;
+  background: white;
 }
+ul li  ul {
 
-nav a
-{color: white;
-    text-decoration: none;
-    padding: 0.25em;
-      
+  background: white;
 }
-a:hover{
-    color: black;
-}
+ ul li  ul li {
+  float:none;
+ }
+ ul li ul  {
+  display: none;
+  margin-top: 1%;
+  
+ }
+ ul  li:hover ul {
+
+  display: block;
+  background: lightgray;
+ }
+
+
+
+
 #figborder {
-border: 20px solid white;
+border: 35px solid white;
 border-color: white;
 margin:6%;
+width: 60%;
+height: 700px;
+
 }
 
 #fig1 {
 
-        width: 18%;
-   
-    
+        width: 300px;
+       height: 400px;
     margin-top: -14%;
     
     margin-left: 31%;
 }
 #fig2{
-    width: 18%;
+    width: 300px;
+    height: 400px;
 
     margin-top: 3%;
     
     margin-left: 59%;
 }
+
 #fig3 {
 
       width: 300px;
