@@ -56,10 +56,11 @@ margin:6%;
 }
 #fig3 {
 
-      width: 18%;
+      width: 300px;
+      height: 400px;
     margin-top: -14%;
     margin-left: 30%;
-    margin-bottom: -17%;
+    margin-bottom: -28%;
 
 }
 #figborder1 {
@@ -74,10 +75,10 @@ margin:6%;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
   margin-left: 31%;
-  margin-top: 15%;
+  margin-top: 15%; /* Remove this if you don't want the 3D effect */
 }
 
-
+/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 150%;
@@ -85,14 +86,15 @@ margin:6%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+
 }
 
-
+/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-
+/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 150%;
@@ -100,7 +102,7 @@ margin:6%;
   backface-visibility: hidden;
 }
 
-
+/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
   color: black;
@@ -108,8 +110,8 @@ margin:6%;
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 /*Footeri*/
@@ -118,12 +120,11 @@ footer section
 {
     width: 100%;
     margin-top: 4%;
-    display: inline-flex;
-    background-color: #ffe0cc;
+    display: inline-flex;;
 }
 footer section div h3
 {
-    color: black;
+    color: #fde2cf;
     font-size: 130%;
 }
 .div1
@@ -133,25 +134,25 @@ footer section div h3
 }
 .div1 a
 {
-    color: black;
+    color: #fde2cf;
     text-decoration: none;
 }
 footer section div p
 {
-    color:  #484848;
+    color: #fde2cf;
     font-size: 120%;
 }
 footer section div input
 {
     margin:2%;
     padding: 5%;    
-    color: black;
+    color: white;
     
 }
 #sub1{
     width: 60%;
-    color:white;
-    background-color: black;
+    color:#595858;
+    background-color: #fde2cf;
     border:none;
     border-radius: 6px;
     font-size: 130%;
@@ -159,7 +160,7 @@ footer section div input
 }
 .secfooter
 {
-    background-color: #242729;
+    background-color: #86bdbf;
     width: 99.6%;
     margin-top: 0%;
     padding: 3px;
@@ -169,7 +170,7 @@ footer section div input
 {
     margin-top: 0%;
 
-    color:lightgrey;
+    color:#595858;
     font-style: italic;
     padding-top: 5%;
     font-size: 90%;
@@ -178,8 +179,18 @@ footer section div input
 }
 #end
 {
-    color: lightgrey;
+    color:#595858;
    font-style: italic;
    font-size: 90%;
    
+}
+
+.footer1{
+    background-color: rgba(2, 2,2,0.7);
+
+}
+
+.link1{
+    text-decoration: none;
+    color: black;
 }
