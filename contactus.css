@@ -1,0 +1,44 @@
+
+{
+	box-sizing: border-box;
+
+}
+ body{
+	 background-color: #fcf0f0;
+ }
+
+nav
+{
+
+    font-size: 1.1em;
+    padding-left: 50%;
+}
+
+
+section{
+
+
+/*	background: rgba(2, 2,2,0.2) ;*/
+	color: white;
+	padding-bottom: 1em;
+}
+
+nav ul li
+{margin-right: 4px;
+
+    list-style: none;
+    display: inline;
+}
+#drop{
+	overflow: hidden;
+
+}
+
+
+
+a:hover,a:focus
+{	background: rgba(2, 2,2,0.3);
+border-bottom: 3px solid #86bdbf;
+-webkit-appearance:none;
+    color:white;
+}
