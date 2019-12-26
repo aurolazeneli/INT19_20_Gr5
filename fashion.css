@@ -67,3 +67,69 @@ header{
   display: block;
   text-align: left;
 }
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+#figborder {
+border: 35px solid white;
+border-color: white;
+margin:6%;
+width: 75%;
+height: 650px;
+border-radius: 20px;
+
+
+
+}
+
+#fig1 {
+
+        width: 400px;
+       height: 500px;
+    margin-top: -14%;
+border-radius: 20px;
+ box-shadow: 10px 10px 8px  #888888;
+    margin-left: 25%;
+}
+
+#fig2{
+    width: 400px;
+    height: 500px;
+border-radius: 20px;
+    margin-left: 59%;
+    margin-top: -5%;
+     box-shadow: 10px 10px 8px  #888888;
+}
+#fig3 {
+
+      width: 400px;
+      height: 500px;
+    margin-top: -14%;
+    margin-left: 25%;
+    margin-bottom: -28%;
+    border-radius: 20px;
+     box-shadow: 10px 10px 8px  #888888;;
+
+}
+#figborder1 {
+border: 20px solid white;
+border-color: white;
+margin:6%;
+}
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 220px;
+  border: 1px solid #f1f1f1;
+
+  perspective: 1000px;
+  margin-left: 31%;
+  margin-top: 15%; /* Remove this if you don't want the 3D effect */
+}
