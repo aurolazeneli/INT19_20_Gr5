@@ -27,12 +27,34 @@
 </div>
 </header>
 
-  <div >
-    <p align="center">
-      <img id="figborder" src="fphoto.png">
-    </p>
+   <div >
+    <img name="slide" width="75%" height="650px" style="margin-bottom:23%; margin-top:3%; margin-left:13%;">
+ </div>
 
-      <img id="fig1"   src="fphoto2.png">
+ <script>
+ var i=0;
+ var images = [];
+ var time = 3000;
+   //image LIFESTYLE
+   images[0] = 'fphoto.png';
+   images[1] = 'fphotoo1.png';
+   images[2] = 'fphotoo2.png';
+
+   function changeImg(){
+     document.slide.src = images[i];
+     if(i < images.length - 1)
+     {
+      i++;
+    }else {
+      i = 0;
+    }
+    setTimeout("changeImg()", time);
+
+   }
+   window.onload = changeImg;
+
+ </script>
+      <img id="fig1"   src="fphoto3.png">
 .paragraph
 {
   font-style: oblique;
@@ -43,14 +65,7 @@
 
    </style>
     <p  class="paragraph"style="margin-left: 53%;
-    margin-top: -20%; " >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    margin-top: -25%;font-size:400% " >The Best Beauty Products to Stock Up On in 2020, According to Celebrity Makeup Artists</p>
 </div >
 <section style="background-color: #fadef4; ">
 <div >
