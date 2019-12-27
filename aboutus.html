@@ -43,8 +43,24 @@
 <div class="circle"></div></section>
 
 <div>
+<!--set canvas-->
+<canvas id="myCanvas" width="200" height="100"
+style="border:3px solid #d3d3d3; margin-left: 69em; " ></canvas>
 
-   <p style="border:10px; border-style:solid; border-color:#FBEEE6; padding: 1em; margin-left: 85%; margin-right:2%; margin-top: -14%;">-Video-</p>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(5,5,300,0);
+grd.addColorStop(0,"pink");
+grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+   
 </div>
 <div class="circle1"></div>
 <div class="circle2"></div>
@@ -70,7 +86,8 @@
     margin-bottom: 7%;
     transform: rotate(176deg);
     border-color: #D6DBDF ;">
-   <!––canvas text-->
+   
+ <!––canvas text-->
 
     <canvas id="canvas" width="200" height="100"
     style="border: 2px solid #d3d3d3; margin-left: 7em;"></canvas>
