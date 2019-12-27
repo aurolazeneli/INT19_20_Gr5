@@ -114,18 +114,16 @@ border: 1px solid #000;
 text-align:center;
 }
 .text{
-        background-color:#F8F9F9 ;
-    width: 200px;
-    padding: 25px;
-    margin-left: 31%;
-    margin-top: -12%;
+     background-color:#F8F9F9 ;
+  width: 400px;
+  padding: 25px;
+  margin-left: 31%;
+  margin-top: -12%;
+  column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px dashed black;
 }
-.text1{
-       margin-left: 49%;
-    background-color: #F8F9F9  ;
-    width: 200px;
-    padding: 25px;
-    margin-top: -19%;}
+
   footer section
 {
     width: 100%;
