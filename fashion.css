@@ -33,7 +33,7 @@ header{
 }
 
 .dropdown .dropbtn {
-  font-size: 20px;
+  font-size: 23px;
   border: none;
   outline: none;
   color: #485e74;
@@ -91,8 +91,8 @@ border-radius: 20px;
 
 #fig1 {
 
-        width: 400px;
-       height: 500px;
+        width: 450px;
+       height: 550px;
     margin-top: -14%;
 border-radius: 20px;
  box-shadow: 10px 10px 8px  #888888;
