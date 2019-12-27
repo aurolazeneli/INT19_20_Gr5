@@ -26,15 +26,18 @@
   </div>
 </header>
 <section style="margin-top: 7%;">
+<!--set canvas to text say hi-->
   <div>
-  <p style="border: 10px;
-    border-style: solid;
-    border-color: #FBEEE6;
-    padding: 1em;
-            margin-left: 18%;
-    margin-right: 74%;
-    margin-top: 13%;
-}">   Say    <br> Hi</p>
+    <canvas id="canvas1" width="200" height="100"
+    style="border: 2px solid #d3d3d3; margin-left: 7em;"></canvas>
+
+  <script>
+  var canvas = document.getElementById("canvas1");
+  var ctx =canvas.getContext("2d");
+  ctx.font = "30px Ariel";
+  ctx.strokeText(" SAY HI ",30,60);
+</script>
+
 </div>
 <section>
 <div class="circle"></div></section>
@@ -67,14 +70,25 @@
     margin-bottom: 7%;
     transform: rotate(176deg);
     border-color: #D6DBDF ;">
-   <p style="border:10px; border-style:solid; border-color:#FBEEE6; padding: 1em;     margin-left: 16%;
-    margin-right: 72%;
-    margin-top: -6%;;">sdsdsds.<br>sdsdasdasdada</p>
+   <!––canvas text-->
+
+    <canvas id="canvas" width="200" height="100"
+    style="border: 2px solid #d3d3d3; margin-left: 7em;"></canvas>
+
+<script>
+  var canvas = document.getElementById("canvas");
+  var ctx =canvas.getContext("2d");
+  ctx.font = "30px Ariel";
+  ctx.strokeText("HI THERE",30,60);
+</script>
+
 </div>
 </section>
+<div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            </div>
 
-<div class="text"> <br> <br>TEXT <br> <br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-<div class="text1"> <br><br> <br> <br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 <footer style="background-image: url(lifef.png); background-repeat: no-repeat; width:100%; background-size: 1300px 500px; margin-top: 12%;" >
    <section  class="footer1" >
     
