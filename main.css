@@ -36,11 +36,14 @@ nav ul li
 	border-color: #1F242A;
 }
 
-a:hover
-{
-    
+a:hover,a:focus
+{	background: rgba(2, 2,2,0.2);
+border-bottom: 3px solid #86bdbf;
+-webkit-appearance:none;
     color:black;
 }
+
+
 nav a
 {color: white;
     text-decoration: none;
