@@ -155,7 +155,7 @@ margin:6%;
 }
 
 .flip-card-back {
-  background-color: white;
+  background-color: #fcf0f0;
   color: black;
   transform: rotateY(180deg);
 }
