@@ -164,3 +164,72 @@ ul li:hover ul li{
      color: white;
 
  }
+#sub1{
+     width: 60%;
+     color:#595858;
+     background-color: #fde2cf;
+     border:none;
+     border-radius: 6px;
+     font-size: 130%;
+
+ }
+ .secfooter
+ {
+     background-color: #86bdbf;
+     width: 99.6%;
+     margin-top: 0%;
+     padding: 3px;
+
+ }
+ #copyright
+ {
+     margin-top: 0%;
+
+     color:#595858;
+     font-style: italic;
+     padding-top: 5%;
+     font-size: 90%;
+
+
+ }
+ #main{
+ 	padding-top: 5px;
+ position: sticky !important;
+ 	padding-bottom: 5px;
+
+ }
+ #end
+ {
+     color:#595858;
+    font-style: italic;
+    font-size: 90%;
+
+ }
+
+ .footer1{
+
+ /*    height: 350px;*/
+
+
+ }
+
+ .link1{
+     text-decoration: none;
+     color: black;
+ }
+
+ .valid {
+     border-color: #36cc36;
+
+
+ }
+
+ .invalid {border-color:coral;
+
+                      }
+ input.invalid + p {
+     opacity: 1;
+     height: auto;
+     margin-bottom: 20px;
+ }
+
