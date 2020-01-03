@@ -28,7 +28,7 @@
             </nav>
       </header>
 
-   <div >
+    <div >
     <img name="slide" width="75%" height="650px" style="margin-bottom:23%; margin-top:3%; margin-left:13%;">
  </div>
 
@@ -37,10 +37,9 @@
  var images = [];
  var time = 3000;
    //image LIFESTYLE
-   images[0] = 'fphoto.png';
-   images[1] = 'fphotoo1.png';
-   images[2] = 'fphotoo2.png';
-
+   images[0] = 'images/fphoto.png';
+   images[1] = 'images/fphotoo1.png';
+   images[2] = 'images/fphotoo2.png';
    function changeImg(){
      document.slide.src = images[i];
      if(i < images.length - 1)
@@ -50,29 +49,63 @@
       i = 0;
     }
     setTimeout("changeImg()", time);
-
    }
    window.onload = changeImg;
+   $(document).ready(function(){
+     $("#hide").click(function(){
+       $(".flip-card-front").hide(1000);
+       alert("This flip card is now hidden");
 
+     });
+     $("#show").click(function(){
+       $(".flip-card-front").show();
+     });
+   });
+   $(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+
+  });
+});
+
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $(".animatebutton").click(function(){
+    $("#div1").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
+  });
+});
  </script>
-      <img id="fig1"   src="fphoto3.png">
-.paragraph
-{
-  font-style: oblique;
-  font-size: 110%;
-  margin-bottom: 15%;
-  padding: 2%;
-}
+      <img id="fig1"   src="images/fphoto3.png">
+      <style>
+      .paragraph
+      {
+        font-style: oblique;
+        font-size: 110%;
+        margin-bottom: 15%;
+        padding: 2%;
+      }
 
-   </style>
+         </style>
+
     <p  class="paragraph"style="margin-left: 53%;
-    margin-top: -25%;font-size:400% " >The Best Beauty Products to Stock Up On in 2020, According to Celebrity Makeup Artists</p>
+    margin-top: -25%;font-size:220% " >The Best Beauty Products to Stock Up On in 2020, According to Celebrity Makeup Artists</p>
 </div >
 <section style="background-color: #fadef4; ">
 <div >
-  <img id="fig2"src="fphoto7.png">
+  <img id="fig2"src="images/fphoto7.png">
     <p  class="paragraph"style="margin-left: 12%; padding-right: 50%;
-    margin-top: -29%;font-size:200%">Cosmetics are intended to be applied externally.
+    margin-top: -29%;font-size:180%">Cosmetics are intended to be applied externally.
      They include, but are not limited to, products that can be applied to the face: skin-care creams,
       lipsticks, eye and facial makeup, towelettes, and colored contact lenses; to the body: deodorants,
       lotions, powders, perfumes, baby products, bath oils, bubble baths, bath salts, and body butters;
@@ -81,9 +114,9 @@
 </div>
 
 <div>
-    <img id="fig3"src="fphoto4.png">
-<p  class="paragraph"style="margin-left: 47%; padding-left: 10%;
-    margin-top: 3%;font-size:200%">Every fashion lover could use more style inspiration.
+    <img id="fig3"src="images/zend.png">
+<p  class="paragraph"style="margin-left: 40%; padding-left: 10%;
+    margin-top: 3%;font-size:180%">Every fashion lover could use more style inspiration.
     Putting together fresh and unique outfit ideas on a regular basis isn’t always easy.
      In fact, creating looks from scratch can be an extremely challenging task that leaves you feeling frustrated and discouraged.
       When you’re faced with a limited wardrobe, limited funds, and a lack of fresh ideas, giving up might seem like the easiest choice.</p>
@@ -96,19 +129,42 @@
 <div class="flip-card" style="margin-bottom: 30%;">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="fphoto6.png" style="width: 100%; height: 500px;">
+      <img src="images/fphoto6.png" style="width: 100%; height: 500px;">
     </div>
     <div class="flip-card-back">
-      <h1 style="color:">A make up tutorial</h1>
-      <iframe width="580" height="380"
-    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-      <p>Hope you learnt something from it</p>
+
+      <button>Click to fade in boxes</button><br><br>
+      <button class="animatebutton">Start Animation</button>
+  <div id="div1" style="width:200px;height:200px;display:none;background-color:red;"></div><br>
+  <div id="div2" style="width:200px;height:200px;display:none;background-color:green;"></div><br>
     </div>
   </div>
 </div>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
 </section>
+<section>
+  <div id="flip">Click to see more outfits for autumn/fall</div>
+<img src="images/outfits.png" alt="" width="1000" id="panel" >
 
+</section>
+<style>
+#panel, #flip {
+  margin-top: 1%;
+  padding: 5px;
+  text-align: center;
+  background-color: #f0c9e4;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+</style>
 
 <footer style="background-image:
         linear-gradient(rgba(2, 2,2,0.7), rgba(2, 2,2,0.7)),
