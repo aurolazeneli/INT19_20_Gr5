@@ -65,3 +65,62 @@ ul li:hover ul li{
  {
    width: 1350px;
  }
+/*Body*/
+ .skincare
+ {
+   margin-top: 10%;
+ }
+ .skincare h1
+ {
+   font-family: 'Allura', cursive;
+   font-size: 52px;
+   margin-bottom: 60px;
+   text-align: center;
+ }
+.skincare1
+{
+  display: flex;
+  text-align: center;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.skincare1 .firstA
+{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;
+  position: relative;
+}
+.skincare1 .firstA h3
+{
+  color: #7cafd6;
+  font-size: 26px;
+  margin-top: 50px;
+
+}
+.skincare1 .firstA p.Ap1
+{
+  color: #ccc;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 12px 0;
+
+}
+.skincare1 .firstA .Article_img
+{
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+}
