@@ -1,0 +1,187 @@
+*{
+  box-sizing:
+}
+body{
+  margin: 0;
+}
+*
+{
+padding: 0;
+margin: 0;
+}
+#ul1{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav{
+  margin-top: 35px;
+  margin-left: 52%;
+}
+
+.ul2{
+
+  float: left;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(2, 2,2,0.0);
+  opacity: 0.8;
+  line-height: 40px;
+
+  text-align: center;
+  font-size: 18px;
+
+}
+.ul2 a{
+  text-decoration: none;
+  color: white;
+  display: block;
+
+}
+
+.ul2 a:hover{
+    text-align: center;
+  background-color: rgba(2, 2,2,0.5);
+  border-bottom: 3px solid #86bdbf;
+  -webkit-appearance:none;
+      color:coral;
+
+}
+.ul3{
+  display: none;
+background:  rgba(2, 2,2,0.3);
+	border-bottom:0px !important;
+}
+.ul2:hover ul li{
+  display: block;
+}
+ {
+   width: 1350px;
+ }
+
+
+
+
+#navbar{
+  background:  rgba(2, 2,2,0.4);
+  width: 100% !important;
+
+  height: 115px;
+position: relative;
+
+}
+
+
+#myVideo{
+
+      margin: auto;
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      visibility: visible;
+      opacity: 1;
+      width: 1265.33px;
+      height: auto;
+      overflow: hidden;
+
+
+}
+
+
+section{
+
+
+/*	background: rgba(2, 2,2,0.2) ;*/
+	color: white;
+	padding-bottom: 1em;
+}
+
+
+
+#drop{
+	overflow: hidden;
+
+
+}
+
+
+
+
+header
+{
+
+  width: 100% !important;
+	height: 500px;
+
+background-image:
+        linear-gradient(rgba(2, 2,2,0.5), rgba(2, 2,2,0.1)),
+        url('health.mp4');
+    background-size: 1300px 500px;
+
+
+
+}
+
+#get{
+
+	color: white;
+	font-size: 220%;
+	font-weight: 180%;
+}
+#list{
+  margin-left: 50px;
+list-style-type: square
+}
+#list li{
+
+padding: 20px;
+padding-right: 50px;
+}
+#list a{
+  text-decoration: none;
+  color: black;
+  border: none;
+}
+#list li:hover{
+
+color: lightblue;
+}
+#list li:active{
+  border-left: 3px ;
+  border-color: coral;
+}
+.art1{
+  background-color: white;
+  height: 600px;
+  padding: 8%;
+}
+.sec1{
+  display: inline-flex;
+}
+.sdiv h3{
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.sdiv h5{
+  margin-left:20px;
+}
+
+#btn1{
+  margin-top: 2%;
+  width: 120px;
+  height: 35px;
+  margin-left: 80%;
+  border: 0;
+      background: none;
+      -webkit-appearance: none;
+  background-color: coral;
+  color: white;
+  border-radius:1px;
+  outline: 0 !important;
+
+
+}
