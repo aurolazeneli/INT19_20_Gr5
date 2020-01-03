@@ -124,3 +124,43 @@ ul li:hover ul li{
   transform: translateX(-50%);
   background: #fff;
 }
+.skincare1 .firstA .Article_img img{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+
+ footer section
+ {
+     width: 100%;
+     margin-top: 4%;
+     display: inline-flex;;
+ }
+ footer section div h3
+ {
+     color: #fde2cf;
+     font-size: 130%;
+ }
+ .div1
+ {
+     margin-right: 30%;
+     margin-left: 4%;
+ }
+ .div1 a
+ {
+     color: #fde2cf;
+     text-decoration: none;
+ }
+ footer section div p
+ {
+     color: #fde2cf;
+     font-size: 120%;
+ }
+ footer section div input
+ {
+     margin:2%;
+     padding: 5%;
+     color: white;
+
+ }
