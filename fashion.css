@@ -67,6 +67,18 @@ ul li:hover ul li{
    width: 1350px;
  }
 
+.carousel-container
+{
+  width: 60%;
+  margin:auto;
+  overflow: hidden;
+}
+.carousel_slide
+{
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
 
 
 #fig1 {
@@ -129,6 +141,27 @@ margin:6%;
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  backface-visibility: hidden;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color:white ;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
 /* hide show*/
 
 #hide{
@@ -137,13 +170,21 @@ outline: 0 !important;
   padding: 10px 24px;
   border-radius: 10px;
   background-color: #f0c9e4;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
 }
 #show{
   margin-left: 50%;
 outline: 0 !important;
   padding: 8px 21px;
   border-radius: 10px;
-  background-color: #f0c9e4;
+    background-color: #f0c9e4;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
 }
 #hide:hover {
   background-color: #ed8acf;
@@ -161,26 +202,29 @@ outline: 0 !important;
   padding: 2%;
 }
 
-
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 150%;
-  height: 150%;
-  backface-visibility: hidden;
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: #f0c9e4;}
+  to {background-color: #ed8acf;}
 }
 
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
+/* Standard syntax */
+@keyframes example {
+  from {background-color: #f0c9e4;}
+  to {background-color: #ed8acf;}
+}
+/*kam bere ndryshime te transition*/
+#div2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s; /* Safari prior 6.1 */
+  transition: width 2s;
+}
+#div2:hover {
+  width: 300px;
 }
 
-.flip-card-back {
-  background-color: #fcf0f0;
-  color: black;
-  transform: rotateY(180deg);
-}
 /*Footeri*/
 
 footer section
@@ -268,4 +312,30 @@ footer section div input
 .link1{
     text-decoration: none;
     color: black;
+}
+.invalid {border-color:coral;
+
+                     }
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
+#example3 {
+  border: 10px double black;
+  padding: 30px;
+  background: url(example.png);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+
+#grad10
+{
+  height: 150px;
+  width: 200px;
+  margin-left: 60%;
+  margin-top: -35%;
+  background-color: black;
+  background-image: radial-gradient(white, yellow, black);
 }
