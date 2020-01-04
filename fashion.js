@@ -47,4 +47,22 @@ var hudaProduct = new Person("Huda", "Kattan", 1983, "green");
 document.getElementById("Pdemo").innerHTML =
 "Christian Dior made dior product on  " + diorProduct.age + ".\n Huda Kattan made huda product on  " + hudaProduct.age;
 
+// Constructor function for Person objects
+function Person1(first, last, eye) {
+  this.firstName = first;
+  this.lastName = last;
+
+  this.eyeColor = eye;
+}
+
+// Create 2 Person objects
+var myfavorite = new Person1("Kylie", "Jenner", "blue");
+var myfavorite1 = new Person1("Kim", "Kardashion", "green");
+
+// Add nationality to first object
+myfavorite.nationality = "Kylie Jenner products";
+
+// Display nationality
+document.getElementById("Cdemo").innerHTML =
+"My favorite make products are  " + myfavorite.nationality;
 
