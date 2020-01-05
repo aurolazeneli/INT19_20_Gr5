@@ -185,3 +185,161 @@ color: lightblue;
 
 
 }
+#btn2{
+  margin-top: 2%;
+  width: 120px;
+  height: 35px;
+  margin-left: 108%;
+  border: 0;
+      background: none;
+      -webkit-appearance: none;
+  background-color: coral;
+  color: white;
+  border-radius:1px;
+  outline: 0 !important;
+
+
+}
+#btn4{
+  margin-top: 2%;
+  width: 120px;
+  height: 35px;
+  margin-left: 108%;
+  border: 0;
+      background: none;
+      -webkit-appearance: none;
+  background-color: coral;
+  color: white;
+  border-radius:1px;
+  outline: 0 !important;
+
+
+}
+
+#health{
+  border-collapse: collapse;
+  width: 85%;
+
+}
+th{background-color: coral;
+  color: white;
+  padding: 9px;
+  text-align: center;
+}
+td{width: 140px;
+padding: 4px;
+  border-bottom: 1px black;
+
+
+  text-align: center;
+
+}
+ tr:nth-child(even){background-color: #f2f2f2;}
+  tr:hover {background-color: #ddd;}
+table, th, td {
+  border: 1px solid black;
+}
+#tab{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+/*FOOTER*/
+footer section
+{
+    width: 100%;
+    margin-top: 4%;
+    display: inline-flex;;
+}
+footer section div h3
+{
+    color: #fde2cf;
+    font-size: 130%;
+}
+.div1
+{
+    margin-right: 30%;
+    margin-left: 4%;
+}
+.div1 a
+{
+    color: #fde2cf;
+    text-decoration: none;
+}
+footer section div p
+{
+    color: #fde2cf;
+    font-size: 120%;
+}
+footer section div input
+{
+    margin:2%;
+    padding: 5%;
+    color: white;
+
+}
+#sub1{
+    width: 60%;
+    color:#595858;
+    background-color: #fde2cf;
+    border:none;
+    border-radius: 6px;
+    font-size: 130%;
+
+}
+.secfooter
+{
+    background-color: #86bdbf;
+    width: 99.6%;
+    margin-top: 0%;
+    padding: 3px;
+
+}
+#copyright
+{
+    margin-top: 0%;
+
+    color:#595858;
+    font-style: italic;
+    padding-top: 5%;
+    font-size: 90%;
+
+
+}
+#main{
+	padding-top: 5px;
+position: sticky !important;
+	padding-bottom: 5px;
+
+}
+#end
+{
+    color:#595858;
+   font-style: italic;
+   font-size: 90%;
+
+}
+
+.footer1{
+
+/*    height: 350px;*/
+
+
+}
+
+.link1{
+    text-decoration: none;
+    color: black;
+}
+.valid {
+    border-color: #36cc36;
+
+
+}
+
+.invalid {border-color:coral;
+
+                     }
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
