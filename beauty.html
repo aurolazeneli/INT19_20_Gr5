@@ -113,6 +113,18 @@
   background-color: #7cafd6;
   color: white;
 }
+             /*Kom shtu css3 efekt*/
+
+div.test {
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+
+}
+
+div.test:hover {
+  overflow: visible;
+}
 </style>
            <button type="button"  onclick="myFunction()" id="myBtn1">Read more</button>
 
@@ -125,27 +137,31 @@
          <div class="Article_img">
            <img src="images/skin2.png" alt="firstA_Article_img">
          </div>
-         <h3>Second Skin Care mask </h3>
+           <h3>Second Skin Care mask </h3>
          <p class="Ap1">Something for skincare </p>
-         <p>Those with acne-prone and oily skin will love the Lancer Clarifying Detox Mask with Green Tea and 3% Sulfur,
+         <p>Those with acne-prone and oily skin will love the Lancer Clarifying Detox Mask with Green Tea and<p id="wdemo"></p> <p id="demo2"></p> Sulfur,
            which is made with a blend of clay, sulfur,<span id="dots1">...</span> <span id="more1">azelaic acid, and fruit extracts. It was even created by a dermatologist for his own clients.
             According to Lancer himself,
-            “Acne and aging are triggered by the same mechanisms,” and his skin-care products take on both with a double whammy. Because of this, the mask won a 2019
-             Allure Best of Beauty Award.</span></p>
+            “Acne and aging are triggered by the same mechanisms,” .</span>
+
              <button type="button"  onclick="myFunction1()" id="myBtn11">Read more</button>
+
        </div>
        <div class="firstA">
          <div class="Article_img">
            <img src="images/skin3.png" alt="firstA_Article_img">
          </div>
-         <h3>Third  Skin Care Mask </h3>
+          <h3>Third  Skin Care Mask </h3>
          <p class="Ap1">Something for skincare </p>
 
          <p>Sheet masks from Mamonde are drenched in essences spiked with extracts of skin-healing flowers, like soothing calendula,
            brightening magnolia,<span id="dots2">...</span> <span id="more2">
             and nourishing rose — all grown at the
              K-beauty brand’s gardens just outside of Seoul. Plus, the masks are an Allure Best of Beauty Awards winner for 2019.</span>
+              <!--shtimi i paragrafit per ni forloop--> <p id="demo"></p>
+              <p id="replacedemo">Our products are awsome!</p>
              <button type="button"  onclick="myFunction2()" id="myBtn12">Read more</button>
+
 
 </p>
 
@@ -154,7 +170,37 @@
      </div>
 
      </section>
+<div class="Bexamples">
+     <button id="EcSt" onclick="myFunctionE()">Try it</button>
 
+     <p id="demoE"></p>
+     <button id="EcSt" onclick="myFunctionS()">Try it</button>
+
+     <p id="demoS"></p>
+
+     <p style="font-style:italic;font-size:20px;margin-left:37%;margin-top:-7%;">Largest  number in JavaScript.</p>
+
+<button id="Max" onclick="myFunctionM()">Try it</button>
+<p id="demoM"></p>
+
+<p style="font-style:italic;font-size:20px;margin-left:70%;margin-top:-6%;">Click and tell if is NaN.</p>
+
+<button id="nan" onclick="myFunctionN()">Try it</button>
+
+<p id="demoN"></p>
+<audio controls style="margin-top:5%;outline:none;">
+  <source src="sound1.ogg" type="audio/ogg">
+  <source src="sound1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<audio controls style="margin-top:5%; margin-left: 20%;outline:none;">
+  <source src="sound2.ogg" type="audio/ogg">
+  <source src="sound2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+</div>
 
 
 
