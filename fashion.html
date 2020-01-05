@@ -3,6 +3,7 @@
 <head>
   <title>Fashion</title>
   <link rel="stylesheet" type="text/css" href="fashion.css"/>
+	  <script type="text/javascript" defer  src="fashion.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
@@ -176,6 +177,34 @@ $(document).ready(function(){
 	  <button id="show" onclick="myFunctionm()" style="margin-left:70%;">Try it</button>
 
   <p id="demo" style="margin-left:70%;"></p>
+	  <div style="margin-left:60%;">
+  <p>Count numbers: <output id="result"></output></p>
+  <button onclick="startWorker()">Start Worker</button>
+  <button onclick="stopWorker()">Stop Worker</button>
+  <br /><br />
+
+</div>
+  <script>
+  var w;
+
+  function startWorker()
+  {
+  if(typeof(Worker)!=="undefined")
+    {
+    w=new Worker("demo_workers.js");
+    w.onmessage = function (event) { document.getElementById("result").innerHTML=event.data; };
+    }
+  else
+    {
+    document.getElementById("result").innerHTML="Sorry, your browser does not support Web Workers...";
+    }
+  }
+
+  function stopWorker()
+  {
+  w.terminate();
+  }
+  </script>
 </section>
 <style>
 #panel, #flip {
