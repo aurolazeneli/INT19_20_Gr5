@@ -54,7 +54,21 @@ background:  rgba(2, 2,2,0.3);
    width: 1350px;
  }
 
+#Search{
 
+	border:none;
+    border-style: none;
+	padding-top: 1em;
+	padding-left: 84%;
+}
+#Search input{
+
+	color: lightgrey;
+	background-color:#1F242A;
+	border-radius: 15px;
+
+	border-color: #1F242A;
+}
 
 
 #navbar{
