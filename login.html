@@ -13,17 +13,17 @@
 
     <h1>Login</h1>
 
-      <form class="" action="index.html" name="login" onsubmit="return validate1()" method="post">
+      <form id="form_id"  name="login" method="post">
   <div class="textbox">
 
       <i class="fa fa-user"></i>
-      <input type="text" name="uname" placeholder="Username" value="">
+      <input type="text" name="uname" placeholder="Username"  id="l_username">
     </div>
     <div class="textbox">
       <i class="fa fa-lock"></i>
-      <input type="password" name="pwd" placeholder="Password" value="">
+      <input type="password" name="pwd" placeholder="Password"  id="l_userpassword">
     </div>
-    <input class="btn" type="button" name="" value="Sing in"></div>
+    <input id="btn" type="button" name="" value="Sing in" onclick="validate()"></div>
     </form>
     <p style="color:white">You don't want to log in? <a href="home.html" style=" text-decoration: none; color:gray;" >Go to the home page.</a> </p>
   </body>
