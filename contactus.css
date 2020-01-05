@@ -7,47 +7,77 @@
 	 background-color: #fcf0f0;
  }
 
-nav
-{
-
-    font-size: 1.1em;
-    padding-left: 50%;
-}
-
-
-section{
-
-
-/*	background: rgba(2, 2,2,0.2) ;*/
-	color: white;
-	padding-bottom: 1em;
-}
-
-nav ul li
-{margin-right: 4px;
-
-    list-style: none;
-    display: inline;
-}
-#drop{
-	overflow: hidden;
-
-}
 
 
 
-a:hover,a:focus
-{	background: rgba(2, 2,2,0.3);
-border-bottom: 3px solid #86bdbf;
--webkit-appearance:none;
-    color:white;
-}
-nav a
-{color: white;
-    text-decoration: none;
-    padding: 8px;
+ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+ header{
+   background:  rgba(2, 2,2,0.4);
+   width: 100% !important;
 
-}
+   height: 115px;
+
+ }
+ nav{
+   margin-top: 35px;
+   margin-left: 52%;
+ }
+
+ ul li{
+
+   float: left;
+   width: 100px;
+   height: 40px;
+   background-color: rgba(2, 2,2,0.0);
+   opacity: 0.8;
+   line-height: 40px;
+
+   text-align: center;
+   font-size: 18px;
+
+ }
+ ul li a{
+   text-decoration: none;
+   color: white;
+   display: block;
+
+ }
+
+ ul li a:hover{
+     text-align: center;
+   background-color: rgba(2, 2,2,0.5);
+   border-bottom: 3px solid #86bdbf;
+   -webkit-appearance:none;
+       color:coral;
+
+ }
+ ul li ul li{
+   display: none;
+ background:  rgba(2, 2,2,0.3);
+ 	border-bottom:0px !important;
+ }
+ ul li:hover ul li{
+   display: block;
+ }
+  {
+    width: 1350px;
+  }
+
+ #head{
+
+
+ 	background: rgba(2, 2,2,0.4) ;
+ 	color: white;
+ 	padding-bottom: 3em;
+ }
+
+
+
+
 header
 {
   width: 100% !important;
@@ -55,12 +85,14 @@ header
 
 background-image:
         linear-gradient(rgba(2, 2,2,0.2), rgba(2, 2,2,0.4)),
-        url('img.png');
-    background-size: 1300px 500px;
+        url('img.png') ;
+
+
+				background-repeat: no-repeat;
+
+    background-size: 1600px 500px;
 }
-header h2{
-	font-size: 180%;
-}
+
 #get{
 
 	color: white;
@@ -277,3 +309,35 @@ footer section div input
     text-decoration: none;
     color: black;
 }
+.valid {
+    border-color: #36cc36;
+
+
+}
+
+.invalid {border-color:coral;
+
+                     }
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
+#geo {
+
+	margin-left: 6%;
+	background-color: #eeadf0;
+	border:none;
+	color:white;
+	padding: 15px 32px;
+	text-align:center;
+	display: inline-block;
+	font-size: 15px;
+	border-radius: 10px;
+	outline: none;
+}
+#geo:hover{
+
+	background-color: #de62cb;
+}
+
