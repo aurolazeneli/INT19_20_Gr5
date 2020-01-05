@@ -21,7 +21,7 @@
     </div>
     <div class="textbox">
       <i class="fa fa-lock"></i>
-      <input type="password" name="pwd" placeholder="Password"  id="l_userpassword">
+      <input type="password" name="pwd" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="l_userpassword">
     </div>
     <input id="btn" type="button" name="" value="Sing in" onclick="validate()"></div>
     </form>
