@@ -1,86 +1,78 @@
-    body{
+body{
+      background-color: #fff7f7;
       margin: 0;
     }
       /*    body{
-              
+
               background-color: #white;
               background-repeat: no-repeat;
               background-size: cover;
               background-position: center;
               box-sizing: border-box;
               font-family: sans-serif;
-
           }*/
-header{
-  padding-top: 1px;
-  background-color: #ffe0cc;
-  padding-bottom: 50px;
-}
-.nav {
+          *
+          {
+          padding: 0;
+          margin: 0;
+          }
+          ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+          header{
+            background:  rgba(2, 2,2,0.4);
+            width: 100% !important;
 
-  background: #ffe0cc;
-  margin:0;
-  width:100%;
-}
-header h2
-{
-  font-size: 180%;
-  margin-bottom:0%;
-  margin-top: 3%;
-  color: #877f7d;
-}
-ul {
+            height: 115px;
 
+          }
+          nav{
+            margin-top: 35px;
+            margin-left: 52%;
+          }
 
-  list-style: none;
-  padding: 0;
-  margin:0;
-  margin-top: -2%;
-  position: absolute;
-  
-}
-ul li {
+          ul li{
 
+            float: left;
+            width: 100px;
+            height: 40px;
+            background-color: rgba(2, 2,2,0.0);
+            opacity: 0.8;
+            line-height: 40px;
 
-  float:right;
-  margin-top: 10px;
-}
+            text-align: center;
+            font-size: 18px;
 
-ul li a {
+          }
+          ul li a{
+            text-decoration: none;
+            color: white;
+            display: block;
 
-  width:93px;
-  color:gray;
-  display: block;
-  text-decoration: none;
-  font-size: 18px;
-  text-align: left;
-  padding: 10px;
- 
+          }
 
+          ul li a:hover{
+              text-align: center;
+            background-color: rgba(2, 2,2,0.5);
+            border-bottom: 3px solid #86bdbf;
+            -webkit-appearance:none;
+                color:coral;
 
-}
-a:hover {
+          }
+          ul li ul li{
+            display: none;
+          background:  rgba(2, 2,2,0.3);
+          	border-bottom:0px !important;
+          }
+          ul li:hover ul li{
+            display: block;
+          }
+           {
+             width: 1350px;
+           }
 
-
-  background: white;
-}
-ul li  ul {
-
-  background: white;
-}
- ul li  ul li {
-  float:none;
- }
- ul li ul  {
-  display: none;
-  margin-top: 1%;
-  
- }
- ul  li:hover ul {
-
-  display: block;
-  background: lightgray;
- }
 .circle {
    height: 226px;
     width: 247px;
@@ -97,7 +89,7 @@ ul li  ul {
     margin-left: 51%;
     margin-top: -26%;}
 .img {
- 
+
 border-radius: 50%;
 
 }
@@ -114,20 +106,22 @@ border: 1px solid #000;
 text-align:center;
 }
 .text{
-     background-color:#F8F9F9 ;
-  width: 400px;
-  padding: 25px;
-  margin-left: 31%;
-  margin-top: -12%;
-  column-count: 2;
-    column-gap: 30px;
-    column-rule: 1px dashed black;
+        background-color:#F8F9F9 ;
+    width: 200px;
+    padding: 25px;
+    margin-left: 31%;
+    margin-top: -12%;
 }
-
+.text1{
+       margin-left: 49%;
+    background-color: #F8F9F9  ;
+    width: 200px;
+    padding: 25px;
+    margin-top: -19%;}
   footer section
 {
     width: 100%;
-    margin-top: 4%;
+    margin-top: 0;
     display: inline-flex;;
 }
 footer section div h3
@@ -145,6 +139,46 @@ footer section div h3
     color: #fde2cf;
     text-decoration: none;
 }
+.pretext{
+  background-color:#F8F9F9 ;
+ width: 400px;
+ padding: 25px;
+ margin-left: 31%;
+ margin-top: -8%;
+ position: absolute;
+
+}
+.text{
+     background-color:#F8F9F9 ;
+  width: 380px;
+  padding: 25px;
+
+  column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px dashed black;
+}
+footer section
+{
+    width: 100%;
+    margin-top: 4%;
+    display: inline-flex;;
+}
+footer section div h3
+{
+    color: #fde2cf;
+    font-size: 130%;
+}
+.div1
+{
+    margin-right: 30%;
+    margin-left: 4%;
+
+}
+.div1 a
+{
+    color: #fde2cf;
+    text-decoration: none;
+}
 footer section div p
 {
     color: #fde2cf;
@@ -153,9 +187,9 @@ footer section div p
 footer section div input
 {
     margin:2%;
-    padding: 5%;    
+    padding: 5%;
     color: white;
-    
+
 }
 #sub1{
     width: 60%;
@@ -181,22 +215,30 @@ footer section div input
     color:#595858;
     font-style: italic;
     padding-top: 5%;
-    font-size: 90%;
+    font-size: 100%;
+    padding-bottom: 5%;
 
+
+}
+#main{
+	padding-top: 5px;
+
+	padding-bottom: 5px;
 
 }
 #end
 {
     color:#595858;
    font-style: italic;
-   font-size: 90%;
-   
+   font-size: 100%;
+   padding-top: 5%;
+
 }
 
 .footer1{
-    background-color: rgba(2, 2,2,0.7);
-    height: 350px;
-    
+
+/*    height: 350px;*/
+
 
 }
 
@@ -204,10 +246,30 @@ footer section div input
     text-decoration: none;
     color: black;
 }
+.valid {
+    border-color: #36cc36;
+
+
+}
+
+.invalid {border-color:coral;
+
+                     }
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.link1{
+    text-decoration: none;
+    color: black;
+}
 .circle2{margin-top: -10%;
     margin-left: -80%;
-    margin-bottom: -20%;
-    margin-left: 60%;
+    margin-bottom: -14%;
+    margin-left: 52%;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -219,3 +281,51 @@ footer section div input
   rgba(0, 0, 0, 0) 20px
 )
 }
+
+.game
+{
+  margin-top: 50px;
+  margin-left: 5%;
+
+}
+.game h2{
+  font-size: 20px;
+  font-family: cursive;
+  color: #bfaabf;
+  border:10px solid #FBEEE6;
+
+  width: 18%;
+
+}
+#Bbutton {
+  margin-left: 25%;
+  margin-top: -30%;
+  margin-bottom: 5%;
+  background-color: #eeadf0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
+}
+#Bbutton:hover{
+  background-color:#de62cb;
+}
+.svg-triangle{
+   margin-top: -100%;
+   margin-left: 27%;
+
+   width: 500px;
+   height: 100px;
+ }
+
+ .svg-triangle polygon {
+   fill:#eeadf0;
+   stroke:#eeadf0;
+   stroke-width:2;
+ }
