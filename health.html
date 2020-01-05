@@ -18,6 +18,35 @@
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+      .modal1{
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 75px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+      .modal4{
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 75px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
 
 /* Modal Content */
 .modal-content {
@@ -54,6 +83,18 @@
   font-size: 28px;
   font-weight: bold;
 }
+.close1{
+  color: coral;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close4{
+  color: coral;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
 .close:hover,
 .close:focus {
@@ -61,6 +102,17 @@
   text-decoration: none;
   cursor: pointer;
 }
+      .close1:hover,.close1:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close4:hover,.close4:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 .modal-header {
   padding: 2px 16px;
@@ -137,6 +189,32 @@ document.getElementById("demo").innerHTML = d;
 <button type="button" name="button" id="btn1">Learn More</button>
   </div>
 </section>
+<h3> <b>Weight loss surgery reduces skin cancer risk</b></h3>
+<h5>Magdalena Taube, Ph.D.</h5>
+    <p id="demo1" style="margin-left:20px;"></p>
+    <script>
+var d = new Date(2018, 12, 20);
+document.getElementById("demo1").innerHTML = d;
+</script>
+<button type="button" name="button" id="btn2">Learn More</button>
+  </div>
+</section>
+<section class="sec1">
+  <img src="images/beans.png" alt="nuk mund te shfaqet" height="120" width="120">
+  <div class="sdiv" style="color:black">
+
+    <h3> <b>High-Fiber Foods</b></h3>
+<h5>Harvard Heart Letter, May 2019.</h5>
+    <p id="demo4" style="margin-left:20px;"></p>
+    <script>
+var d = new Date(2018, 12, 20);
+document.getElementById("demo4").innerHTML = d;
+</script>
+<button type="button" name="button" id="btn4">Learn More</button>
+  </div>
+</section>
+
+
 
 
   </article>
@@ -200,6 +278,251 @@ window.onclick = function(event) {
   }
 }
 </script>
+<div id="myModal1" class="modal1">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close1">&times;</span>
+      <h2>Weight loss surgery reduces skin cancer risk</h2>
+    </div>
+    <div class="modal-body">
+
+      <img src="images/sur1.png" alt="nuk mund te shfaqet" height="300" width="300" style="margin-left:34%">
+    </div>
+    <div class="modal-footer">
+      <h3>Skin cancer is the most common form of cancer in the United States. Melanoma accounts for just 1% of skin cancer cases, but it causes the majority of deaths from this type of disease.</h3>
+      <p>There are an estimated 96,480 new melanoma diagnoses each year in the United States, and according to the authors of a recent study, the rates of malignant melanoma are rising faster than those of any other cancer.
+
+In the U.S. there were 8,650 deaths due to melanoma in 2009 — and despite improved treatments and better 5-year survival rates, there were around 10,130 deaths from this cause in 2016.
+
+Although scientists have identified risk factors associated with melanoma, such as fair skin, family history, and sun exposure, it is not clear why incidence rates are rising.</p>
+    </div>
+  </div>
+
+</div>
+<script>
+// Get the modal
+var modal1 = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("btn2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close1")[0];
+
+// When the user clicks the button, open the modal
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal1.style.display = "none";
+  }
+}
+</script>
+<div id="myModal4" class="modal4">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close4">&times;</span>
+      <h2>High-Fiber Foodsk</h2>
+    </div>
+    <div class="modal-body">
+
+      <img src="images/beans.png" alt="nuk mund te shfaqet" height="300" width="300" style="margin-left:34%">
+    </div>
+    <div class="modal-footer">
+      <h3>Fiber keeps you full, improves health, and aids weight loss. By using these tips to add more to your diet, you can look and feel your best.</h3>
+      <p>Many of us associate fiber with digestive health and bodily functions we’d rather not think about. However, eating foods high in dietary fiber can do so much more than keep you regular. It can lower your risk for heart disease, stroke, and diabetes, improve the health of your skin, and help you lose weight. It may even help prevent colon cancer.
+
+  Fiber, also known as roughage, is the part of plant-based foods (grains, fruits, vegetables, nuts, and beans) that the body can’t break down. It passes through the body undigested, keeping your digestive system clean and healthy, easing bowel movements, and flushing cholesterol and harmful carcinogens out of the body.
+
+  Fiber comes in two varieties: insoluble and soluble.</p>
+    </div>
+  </div>
+
+</div>
+<script>
+// Get the modal
+var modal4 = document.getElementById("myModal4");
+
+// Get the button that opens the modal
+var btn5 = document.getElementById("btn4");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close4")[0];
+
+// When the user clicks the button, open the modal
+btn5.onclick = function() {
+  modal4.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal4.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal4.style.display = "none";
+  }
+}
+</script>
+
+
+<article id="tab" style="margin-left: 13%; margin-bottom:9%;" >
+  <h1 style="margin-left: 20%; margin-bottom: 2%;">Table of Summary Health Statistics</h1>
+  <table  cellpadding="10" class="health" style="border-collapse: collapse;  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;">
+    <thead><tr>
+        <th>Name</th>
+        <th>Year_list</th>
+        <th>Years</th>
+        <th>Age</th>
+        <th rowspan="3">Keywords</th>
+        <th rowspan="3">PDF</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Table P-1. Respondent-assessed health status, by selected characteristics: United States, 2018</td>
+      <td>2018</td>
+      <td  >2018</td>
+      <td>all ages</td>
+      <td>health status</td>
+      <td  > <a href="https://ftp.cdc.gov/pub/Health_Statistics/NCHS/NHIS/SHS/2018_SHS_Table_P-1.pdf">2018_SHS_Table_P-1	</a> </td>
+    </tr>
+    <tr>
+      <td>Table P-2. Limitation in usual activities,and persons limited due to one or more chronic conditions, by selected characteristics: United States, 2018</td>
+      <td>2018</td>
+      <td  >2018</td>
+      <td>all ages</td>
+      <td>activity limitation, chronic condition</td>
+      <td  > <a href="https://ftp.cdc.gov/pub/Health_Statistics/NCHS/NHIS/SHS/2018_SHS_Table_P-2.pdf">2018_SHS_Table_P-2	</a> </td>
+    </tr>
+    <tr>
+      <td>Table P-3. Persons having limitation in activities of daily living and instrumental activities of daily living among persons aged 18 and over, by selected characteristics: United States, 2018</td>
+      <td>2018</td>
+      <td  >2018</td>
+      <td>18 years and over</td>
+      <td>limitation, activities of daily living, instrumental activities of daily living</td>
+        <td  > <a href="https://ftp.cdc.gov/pub/Health_Statistics/NCHS/NHIS/SHS/2018_SHS_Table_P-1.pdf">2018_SHS_Table_P-3	</a> </td>
+    </tr>
+    <tr>
+      <td>Table P-4. Limitation in work activity due to health problems among persons aged 18-69, by selected characteristics: United States, 2018</td>
+      <td>2018</td>
+      <td  >2018</td>
+      <td>18-69 years</td>
+      <td>limitation, work activity</td>
+      <td  > <a href="https://ftp.cdc.gov/pub/Health_Statistics/NCHS/NHIS/SHS/2018_SHS_Table_P-4.pdf">2018_SHS_Table_P-4	</a> </td>
+    </tr>
+    <tr>
+      <td>Table P-9. Persons who did not receive medical care or who delayed seeking medical care in the past year due to cost, by selected characteristics: United States, 2018</td>
+      <td>2018</td>
+      <td  >2018</td>
+      <td>all ages</td>
+      <td>hospital stays</td>
+      <td  > <a href="https://ftp.cdc.gov/pub/Health_Statistics/NCHS/NHIS/SHS/2018_SHS_Table_P-9.pdf">2018_SHS_Table_P-9	</a> </td>
+    </tr>
+    <tr>
+      <td>Table P-10. Number of overnight hospital stays during the past 12 months, by selected characteristics: United States, 2018</td>
+      <td>2018</td>
+      <td  >2018</td>
+      <td>all ages</td>
+      <td>unmet medical need</td>
+        <td  > <a href="https://ftp.cdc.gov/pub/Health_Statistics/NCHS/NHIS/SHS/2018_SHS_Table_P-9.pdf">2018_SHS_Table_P-10	</a> </td>
+    </tr>
+    <tr>
+      <td>Table P-11. Type of health insurance coverage for persons under age 65 and for persons aged 65 and over, by selected characteristics: United States, 2018</td>
+      <td>2018</td>
+      <td  >2018</td>
+      <td>all ages</td>
+      <td>health insurance coverage</td>
+      <td  > <a href="https://ftp.cdc.gov/pub/Health_Statistics/NCHS/NHIS/SHS/2018_SHS_Table_P-12.pdf">2018_SHS_Table_P-11	</a> </td>
+    </tr>
+
+  </tbody>
+  </table>
+
+</article>
+<article id="art2">
+    <h1 style="margin-left: 40%; margin-bottom: 2%; margin-bottom:3%">Top 10 causes of death</h1>
+
+<figure>
+  <img src="images/stat.png" width="800" height="500" style="margin-left:20%" alt="">
+</figure>
+
+</article>
+  </body>
+  <footer id="footer" style="background-image:
+         linear-gradient(rgba(2, 2,2,0.7), rgba(2, 2,2,0.7)),
+         url('images/lifef.png') ; width:100%; background-size: 1300px 500px; margin-top:9%;" >
+  <section  class="footer1" >
+
+  <div  class="div1">
+      <h3>Quick Links</h3>
+      <a href="home.html">HOME</a>
+        <hr style="width: 100%; ">
+        <a href="aboutus.html" >ABOUT US</a>
+        <hr style="width: 100%; ">
+        <a href="fashion.html" >FASHION</a>
+        <hr style="width: 100%; ">
+        <a href="health.html" >HEALTH</a>
+        <hr style="width: 100%; ">
+        <a href="contactus.html" >CONTACT</a>
+        <hr style="width: 100%; ">
+  </div>
+
+     <div style="margin-right: 18%;">
+      <h3>From the Blog</h3>
+      <p><b>Blog post title </b></p>
+      <p>Postet by admin 0000 000 0 00<br>
+         Lorem ipsum dolor sit amet, <br>
+         consectetur adipisicing elit, <br>
+         sed do eiusmod tempor incididunt
+        </p>
+    </div>
+    <div>
+      <h3>Grap our Newsletter</h3>
+      <style >
+        input {
+          border-radius: 3px;
+          border: 3px solid #ccc;
+          outline: none !important;
+        }
+      </style>
+      <form onsubmit=" return validate1()" action="contacus.html" style="color:black;">
+        <input id="name" type="text" name="name" placeholder="Name" style="width: 85%;color:black" >
+
+        <br>
+        <input id="email" type="email" name="email" placeholder="Email" style="width: 85%;color:black">
+
+        <br>
+        <input type="submit" name="" placeholder="Submit" id="sub1"  >
+      </form>
+    </div>
+
+  </section>
+  <section class="secfooter">
+  <div >
+      <p id="copyright">Copyright © 2019 Fundamentals of Web Development</p></div>
+
+      <div style="margin-left: 59%;">
+      <p id="end">Template by © templates </p>
+
+    </div>
+  </section>
+  </footer>
+
 
   </body>
 </html>
