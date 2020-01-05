@@ -8,6 +8,28 @@
     <script type="text/javascript" src="makeup.js">
 
     </script>
+<script>
+      function myFunction() {
+   var message, x;
+   message = document.getElementById("t");
+   message.innerHTML = "";
+   x=document.getElementById("name").value;
+   try {
+    if(x == "") throw "empty";
+
+    if(isNaN(x)) throw "not a number";
+    x = number(x);
+
+
+   }
+   catch(err) {
+
+    message.innerHTML = "input is " + err;
+   }
+
+
+  }
+    </script>
   </head>
   <body style="background-color:#cee1f0" >
     <header>
