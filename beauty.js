@@ -1,5 +1,5 @@
 
- function validate1()
+/* function validate1()
 {
   var username = document.getElementById('name');
   var useremail = document.getElementById('email');
@@ -12,7 +12,7 @@
   {
   true;
   }
-}
+}*/
 const input_fields = {
 name: 	/^[a-zA-Z0-9]+([a-zA-Z0-9](_|-| )[a-zA-Z0-9])*[a-zA-Z0-9]*$/,
 
@@ -157,4 +157,27 @@ function myFunctionN() {
   res = res + Number.isNaN(0 / 0) + ": 0 / 0<br>";
 
   document.getElementById("demoN").innerHTML = res;
+}
+function initStorage() {
+
+function saveName() {
+  var name = document.getElementById('name');
+  sessionStorage.setItem('name',name.value);
+  
+}
+function saveEmail() {
+var email = document.getElementById('email');
+  sessionStorage.setItem('email',email.value);
+
+}
+saveName();
+saveEmail();
+
+
+}
+
+function clearAll() {
+  sessionStorage.clear();
+  window.location.reload();
+
 }
