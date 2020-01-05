@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>Health</title>
     <link rel="stylesheet" href="health.css">
+    <script type="text/javascript" defer src="health.js">
+
+    </script>
     <style>
     .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 75px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -18,7 +21,7 @@
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-      .modal1{
+.modal1{
 display: none; /* Hidden by default */
 position: fixed; /* Stay in place */
 z-index: 1; /* Sit on top */
@@ -31,7 +34,7 @@ overflow: auto; /* Enable scroll if needed */
 background-color: rgb(0,0,0); /* Fallback color */
 background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-      .modal4{
+.modal4{
 display: none; /* Hidden by default */
 position: fixed; /* Stay in place */
 z-index: 1; /* Sit on top */
@@ -44,20 +47,22 @@ overflow: auto; /* Enable scroll if needed */
 background-color: rgb(0,0,0); /* Fallback color */
 background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
-
 
 
 /* Modal Content */
 .modal-content {
+  border-radius: 5px;
+
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding: 0;
+  padding: 20px;
   margin-bottom: 10%:
   border: 1px solid #888;
   width: 80%;
-  height: 70%;
+  height: 480px;
+      overflow-y: auto;
+
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -102,7 +107,7 @@ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   text-decoration: none;
   cursor: pointer;
 }
-      .close1:hover,.close1:focus{
+.close1:hover,.close1:focus{
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -113,7 +118,6 @@ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   cursor: pointer;
 }
 
-
 .modal-header {
   padding: 2px 16px;
   background-color: white;
@@ -121,18 +125,23 @@ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   text-align: center;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {padding: 2px 16px;
+
+    }
+
 
 .modal-footer {
   padding: 2px 50px;
   background-color: white;
   color: black;
   text-align: center;
+
 }
 </style>
   </head>
   <body>
-    <header>
+
+  <header>
     <section id="navbar"  >
 
 
@@ -146,8 +155,7 @@ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
                  <li class="ul2"><a href="fashion.html">FASHION</a>
                    <div class="sublist1">
                      <ul>
-                       <li class="ul3"><a href="fashion.html">Beauty</a></li>
-                       <li class="ul3"><a href="fashion.html">Trends</a></li>
+                       <li class="ul3"><a href="beauty.html">Beauty</a></li>
                        <li class="ul3"><a href="fashion.html">Make-up</a></li>
                      </ul>
                    </div>
@@ -165,18 +173,18 @@ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 
 
   </header>
-  <aside style="width:20%; float:left; background-color:white; color:black">
+  <aside style="width:20%; height:500px; float:left; background-color:#f7f3ed;margin-top: 5%;color:black">
     <ul id="list">
-      <a href="#"><li>ARTICLES<br><hr></li></a>
-    <a href="#" ><li>sfdfdf<br><hr></li></a>
-    <a href="#"><li>sfdfdf<br><hr></li></a>
-    <a href="#"><li>sfdfdf<br><hr></li></a>
-    <a href="#"><li>sfdfdf<br><hr></li></a>
+      <a href="#art1"><li>ARTICLES<br><hr></li></a>
+    <a href="#tab" ><li>TABLE<br><hr></li></a>
+    <a href="#art2"><li>GRAPH<br><hr></li></a>
+    <a href="#"><li>SHORT FACTS<br><hr></li></a>
+    <a href="#footer"><li>OUR NEWSLETTER<br><hr></li><a>
     </ul>
   </aside>
-  <article class="art1" >
+  <article id="art1" >
 <section class="sec1">
-  <img src="heart.png" alt="nuk mund te shfaqet" height="120" width="120">
+  <img src="images/heart.png" alt="nuk mund te shfaqet" height="120" width="120">
   <div class="sdiv" style="color:black">
 
     <h3> <b>IBM Watson Health invests $50mn in research collaborations<br> to advance use of AI in healthcare</b></h3>
@@ -189,7 +197,12 @@ document.getElementById("demo").innerHTML = d;
 <button type="button" name="button" id="btn1">Learn More</button>
   </div>
 </section>
-<h3> <b>Weight loss surgery reduces skin cancer risk</b></h3>
+
+<section class="sec1">
+  <img src="images/sur1.png" alt="nuk mund te shfaqet" height="120" width="120">
+  <div class="sdiv" style="color:black">
+
+    <h3> <b>Weight loss surgery reduces skin cancer risk</b></h3>
 <h5>Magdalena Taube, Ph.D.</h5>
     <p id="demo1" style="margin-left:20px;"></p>
     <script>
@@ -233,7 +246,7 @@ document.getElementById("demo4").innerHTML = d;
     </div>
     <div class="modal-body">
 
-      <img src="heart.png" alt="nuk mund te shfaqet" height="300" width="300" style="margin-left:34%">
+      <img src="images/heart.png" alt="nuk mund te shfaqet" height="300" width="300" style="margin-left:34%">
     </div>
     <div class="modal-footer">
       <h3>IBM Watson Health plans to invest $50mn in research collaborations with two academic organisations as part of a 10-year plan to advance the use of artificial intelligence (AI) in healthcare.</h3>
@@ -244,12 +257,11 @@ Initially, studies are expected to see if AI could improve the use of electronic
 The research will also explore physician and patient user experience and interaction with AI technologies.Kyu Rhee, M.D., M.P.P., vice president and chief health officer at IBM Watson Health, said that the collaboration demonstrates IBM’s belief that working with leading institutions is the best way to “ advance, and understand practical solutions that solve some of the world's biggest health challenges”.
 
 “Today, for example, physicians are spending an average of two hours with their electronic health records and deskwork for every hour of patient care, a phenomenon the American Medical Association says is leading to a steady increase in physician burnout,” he continued.
-
-“AI is the most powerful technology we have today to tackle issues like this one, but there is still a great deal of work to be done to demystify the real role of AI in healthcare with practical, proven results and clear-cut best practices.”</p>
     </div>
   </div>
 
 </div>
+
 
 <script>
 // Get the modal
@@ -278,6 +290,7 @@ window.onclick = function(event) {
   }
 }
 </script>
+
 <div id="myModal1" class="modal1">
 
   <!-- Modal content -->
@@ -523,7 +536,4 @@ window.onclick = function(event) {
   </section>
   </footer>
 
-
-  </body>
 </html>
-
