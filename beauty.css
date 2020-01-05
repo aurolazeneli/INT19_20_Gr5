@@ -1,9 +1,7 @@
 body{
 	margin: 0;
   background: #cee1f0;
-
 }
-
 *
 {
 padding: 0;
@@ -38,7 +36,6 @@ ul li{
 
   text-align: center;
   font-size: 18px;
-
 }
 ul li a{
   text-decoration: none;
