@@ -324,7 +324,7 @@ input.invalid + p {
 #example3 {
   border: 10px double black;
   padding: 30px;
-  background: url(example.png);
+  background: url(images/example.png);
   background-repeat: no-repeat;
   background-origin: border-box;
 }
