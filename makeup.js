@@ -68,3 +68,27 @@ function filter() {
     }
   }
 }
+
+function initStorage() {
+
+function saveName() {
+  var name = document.getElementById('name');
+  localStorage.setItem('name',name.value);
+  
+}
+function saveEmail() {
+var email = document.getElementById('email');
+  localStorage.setItem('email',email.value);
+
+}
+saveName();
+saveEmail();
+
+
+}
+
+function clearAll() {
+  localStorage.clear();
+  window.location.reload();
+
+}
