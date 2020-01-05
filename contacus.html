@@ -11,6 +11,22 @@
 
 	<script type="text/javascript" defer src="contact.js">
 	</script>
+		<script>
+      function myFunction() {
+   var message, x;
+   message = document.getElementById("t");
+   message.innerHTML = "";
+   x=document.getElementById("name").value;
+   try {
+    if(x == "") throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = number(x);
+   }
+   catch(err) {
+    message.innerHTML = "input is " + err;
+   }
+  }
+    </script>
 </head>
 <body  >
 	<header>
@@ -167,7 +183,8 @@
         <input id="email" type="email" name="email" placeholder="Email" style="width: 85%;color:black">
 
         <br>
-        <input type="submit" name="" placeholder="Submit" id="sub1"  >
+        <input type="submit" name="" placeholder="Submit" id="sub1" onclick="myFunction() " >
+        <p id="t" style="color:red; font-size:100%;"></p>
       </form>
     </div>
 
