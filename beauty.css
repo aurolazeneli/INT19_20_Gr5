@@ -49,8 +49,7 @@ ul li a:hover{
   background-color: rgba(2, 2,2,0.5);
   border-bottom: 3px solid #86bdbf;
   -webkit-appearance:none;
-      color:coral;
-
+     color:coral;
 }
 ul li ul li{
   display: none;
