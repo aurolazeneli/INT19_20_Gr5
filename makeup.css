@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body
+{
+  margin: 0;
+  padding: 0;
+
+
+}
+
+
+
+
+
+*
+{
+padding: 0;
+margin: 0;
+}
+
+
+header
+{
+
+  width: 100% !important;
+	height: 254px;
+  margin-top: -6%;
+
+
+
+
+
+}
+
+#ul1{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav{
+  margin-top: 35px;
+  margin-left: 52%;
+}
+
+.ul2{
+
+  float: left;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(2, 2,2,0.0);
+  opacity: 0.8;
+  line-height: 40px;
+
+  text-align: center;
+  font-size: 18px;
+
+}
+.ul2 a{
+  text-decoration: none;
+  color: white;
+  display: block;
+
+}
+
+.ul2 a:hover{
+    text-align: center;
+  background-color: rgba(2, 2,2,0.5);
+  border-bottom: 3px solid #86bdbf;
+  -webkit-appearance:none;
+      color:coral;
+
+}
+.ul3{
+  display: none;
+background:  rgba(2, 2,2,0.3);
+	border-bottom:0px !important;
+}
+.ul2:hover ul li{
+  display: block;
+}
+ {
+   width: 1350px;
+ }
+
+
+
+
+#navbar{
+  background:  rgba(2, 2,2,0.4);
+  width: 100% !important;
+
+  height: 60px;
+position: relative;
+
+}
+
+a{
+  transition: all .5s;
+  text-decoration: none;
+  color: #fff;
+}
+img{
+  width: 100%;
+  transition: all .5s;
+}
+
+section
+{
+  padding: 70px 0;
+ margin-top: 35px;
+ background: rgba(116, 185, 255, 0.09);
+ text-align: center;
+
+
+}
+.container
+{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0;
+}
+main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin: 30px 15px 0px 15px;
+}
+.singleBlog{
+  position: relative;
+  overflow: hidden;
+  max-height: 580px;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px #ccc;
+  transition: all .5s;
+}
+.singleBlog:hover{
+  box-shadow: 0 2px 13px #ccc;
+  transition: all .5s;
+}
+.singleBlog:hover img{
+  transform: scale(1.1);
+  transition: all .4s;
+}
+.blogContent
+{
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 5px;
+  background: linear-gradient(45deg, rgba(21, 82, 153, 1)
+  0%,rgba(144, 192, 229, .4) 100%);
+  transition: all .5s;
+}
+.singleBlog:hover .blogContent{
+  bottom: 0;
+  transition: all .5s;
+}
+.blogContent h3
+{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.blogContent h3 span{
+  display: block;
+  font-size: 60%;
+  margin-top: 5px;
+  font-weight: 600;
+  color: rgba(52, 73, 94, 1.0);
+}
+.blogContent a{
+  font-size: 14px;
+  font-weight: 500;
+
+}
+.blogContent .btn{
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-weight: 400;
+}
+.blogContent .btn:hover
+{
+  background: rgba(52, 152, 219, 1.0);
+  transition: all .5s;
+  text-decoration: none;
+}
+.blogContent a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width:992px) {
+  main{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+}
+@media (max-width:767px)
+{
+  main{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+  .blogContent{
+    bottom: 0;
+    }
+}
+@media (max-width:500px)
+{
+  main{
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+
+
+footer section
+{
+    width: 100%;
+    margin-top: 4%;
+    display: inline-flex;;
+}
+footer section div h3
+{
+    color: #fde2cf;
+    font-size: 130%;
+}
+.div1
+{
+    margin-right: 30%;
+    margin-left: 4%;
+
+}
+.div1 a
+{
+    color: #fde2cf;
+    text-decoration: none;
+}
+footer section div p
+{
+    color: #fde2cf;
+    font-size: 120%;
+}
+footer section div input
+{
+    margin:2%;
+    padding: 5%;
+    color: white;
+
+}
+#sub1{
+    width: 60%;
+    color:#595858;
+    background-color: #fde2cf;
+    border:none;
+    border-radius: 6px;
+    font-size: 130%;
+
+}
+.secfooter
+{
+    background-color: #86bdbf;
+    width: 99.6%;
+    margin-top: 0%;
+    padding: 3px;
+
+}
+#copyright
+{
+    margin-top: 0%;
+
+    color:#595858;
+    font-style: italic;
+    padding-top: 5%;
+    font-size: 100%;
+    padding-bottom: 5%;
+
+
+}
+#main{
+	padding-top: 5px;
+
+	padding-bottom: 5px;
+
+}
+#end
+{
+    color:#595858;
+   font-style: italic;
+   font-size: 100%;
+   padding-top: 5%;
+
+}
+
+.footer1{
+
+/*    height: 350px;*/
+
+
+}
+
+.link1{
+    text-decoration: none;
+    color: black;
+}
+.valid {
+    border-color: #36cc36;
+
+
+}
+
+.invalid {border-color:coral;
+
+                     }
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#div1, #div2 {
+  float: left;
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  margin-left: 12%;
+  margin-top: -15%;
+}
+/*SEACH BUTTON CSS*/
+.Pcontainer
+{
+	margin-left: 50%;
+  margin-top: 20%;
+  margin-bottom: 0;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+background-color: lightgrey;
+	box-shadow: 0 6px 8px rgba(0,0,0,.1);
+	width: 30%;
+	padding: 20px 15px;
+	text-align: center;
+}
+.Pcontainer h1 {
+	margin-bottom: 20px;
+	font-family: sans-serif;
+	font-size: 2.8rem;
+	text-transform: uppercase;
+
+}
+.Pcontainer input
+{
+	width:calc(100% - 16px);
+	padding: 10px 8px;
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+.Pcontainer ul {
+	list-style: none;
+	width: 100%;
+background-color: lightgrey;
+}
+.Pcontainer ul li {
+	padding: 15px 0;
+}
+.Pcontainer ul li a{
+	font-size: 18px;
+	color: #212121;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+.Pcontainer ul li a:hover{
+	color: #e8eaf6;
+}
+
+ @font-face {
+font-family: "Harabara Bold";
+src: url("css/fonts/Harabara.eot");
+src:
+url("css/fonts/Harabara.woff") format("woff"),
+url("css/fonts/Harabara.otf") format("opentype"),
+url("css/fonts/Harabara.svg#filename") format("svg");
+}
+
+h1 {
+font-family: 'Harabara Bold', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+font-size: 50px;
+}
