@@ -6,32 +6,42 @@
 	<meta http-equiv="X-UA-Compatibile" content="ie=edge">
 	<title>CONTACT US</title>
 	<link rel="stylesheet" type="text/css" href="contactus.css"/>
-	<script type="text/contact.js" src="contact.js">
+		<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script type="text/javascript" defer src="contact.js">
 
 	</script>
 </head>
 <body  >
 	<header>
-		<section >
+		<section id="head" >
 
+			<h2 style="padding-top:5px;padding-left:15px; color:white;font-size:180%;" >LIFESTYLE</h2>
+			 <nav class="menu-bar" >
+							<ul>
+								<li> <a href="home.html">HOME</a></li>
+								<li><a href="aboutus.html">ABOUT US</a></li>
+								<li><a href="health.html">HEALTH</a></li>
+								<li><a href="fashion.html">FASHION</a>
+									<div class="sublist1">
+										<ul>
+											<li><a href="beauty.html">Beauty</a></li>
 
-		<h2 style="padding-left:1em; margin-top:0;">LIFESTYLE</h2>
-		<nav id="main" >
-	         <ul id="list">
-						 <li> <a href="home.html">HOME</a></li>
-	           <li><a href="aboutus.html">ABOUT US</a></li>
-	           <li><a href="health.html">HEALTH</a></li>
-	           <li><a href="fashion.html">FASHION</a></li>
-	           <li><a href="contacus.html">NATURE</a></li>
-	           <li><a href="contacus.html">CONTACT</a></li>
-	         </ul>
-	      </nav>
+											<li><a href="makeup.html">Make-up</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="contacus.html">CONTACT</a></li>
+							</ul>
+					 </nav>
 	      </section>
 				<section style="	margin-left: 20%;margin-top:12%;">
 					<h1 id="get">Get In Touch</h1>
 				</section>
 
 	</header>
+
 
 <div class="container" >
 
@@ -43,10 +53,22 @@
 				<li>044345345</li>
 				<li>bla@gmail.com</li>
 			</ul>
+				<button type="button1" id="geo"onclick="showPosition();">Show My Position on Google Map</button>
+			<div id="embedMap" style="width: 400px; height: 300px;">
+
 
 		</div>
 		<div class="contact">
 			<h3>Email Us</h3>
+			<style media="screen">
+
+
+						input {
+
+							border-bottom:  3px solid #ccc !important;
+							outline: none !important;
+						}
+						</style>
 				<form class="" action="index.html" method="post">
 					<p>
 					 <label ></label>
@@ -74,46 +96,62 @@
 
 </div>
 <footer style="background-image:
-        linear-gradient(rgba(2, 2,2,0.7), rgba(2, 2,2,0.7)),
-        url('lifef.png') ; width:100%; background-size: 1300px 500px; margin-top:9%;" >
+			 linear-gradient(rgba(2, 2,2,0.7), rgba(2, 2,2,0.7)),
+			 url('images/lifef.png') ; width:100%; background-size: 1300px 500px; margin-top:9%;" >
 <section  class="footer1" >
 
 <div  class="div1">
-		 <h3>Quick Links</h3>
-		 <a href="#">Link Text here</a>
-			 <hr style="width: 300%; ">
-			 <a href="#" >Link Text here</a>
-			 <hr style="width: 300%; ">
-			 <a href="#" >Link Text here</a>
-			 <hr style="width: 300%; ">
-			 <a href="#" >Link Text here</a>
-			 <hr style="width: 300%; ">
+		<h3>Quick Links</h3>
+		<a href="aboutus.html">About Us Page</a>
+			<hr style="width: 300%; ">
+			<a href="fashion.html" >Fashion Page</a>
+			<hr style="width: 300%; ">
+			<a href="health.html" >Health Page</a>
+			<hr style="width: 300%; ">
+			<a href="contacus.html" >Contact Us Page</a>
+			<hr style="width: 300%; ">
 </div>
 
-		<div style="margin-right: 18%;">
-		 <h3>From the Blog</h3>
-		 <p><b>Blog post title </b></p>
-		 <p>Postet by admin 0000 000 0 00<br>
-				Lorem ipsum dolor sit amet, <br>
-				consectetur adipisicing elit, <br>
-				sed do eiusmod tempor incididunt
-			 </p>
-	 </div>
-	 <div>
-		 <h3>Grap our Newsletter</h3>
-		 <input type="text" name="" placeholder="Name" style="width: 85%"><br>
-		 <input type="email" name="" placeholder="Email" style="width: 85%"><br>
-		 <input type="submit" name="" placeholder="Submit" id="sub1" >
+	 <div style="margin-right: 18%;">
+		<h3>From the Blog</h3>
+		<p><b>LIFESTYLE BLOG </b></p>
+		<p>Fashion,Beauty and Health <br>
+			 The awards for design, creativity,natural<br>
+		,elegance,beauty 	and innovation on<br>
+		 the Internet <br>
 
-	 </div>
+			</p>
+	</div>
+	<div>
+		<h3>Grap our Lifestyle Trends</h3>
+
+		<style >
+			input {
+				border-radius: 3px;
+				border: 3px solid #ccc;
+				outline: none !important;
+			}
+		</style>
+		<form onsubmit=" return validate1()" action="contactus.html" style="color:black;">
+		<input id="name" type="text" name="name" placeholder="Name" style="width: 85%;color:black" >
+
+		<br>
+		<input id="email" type="email" name="email" placeholder="Email" style="width: 85%;color:black">
+
+		<br>
+		<input type="submit" name="" placeholder="Submit" id="sub1"  >
+</form>
+	</div>
 
 </section>
 <section class="secfooter">
 <div >
-		 <p id="copyright">Copyright © 2019 Fundamentals of Web Development</p></div>
-		 <div style="margin-left: 56%;">
-		 <p id="end">Template by © templates </p>
-	 </div>
- </section>
+		<p id="copyright">Copyright © 2019 Fundamentals of Web Development</p></div>
+
+		<div style="margin-left: 59%;">
+		<p id="end">Template by © templates </p>
+
+	</div>
+</section>
 </footer>
 	</html>
