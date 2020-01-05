@@ -148,4 +148,194 @@ margin:6%;
   height: 150%;
   backface-visibility: hidden;
 }
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
 
+/* Style the back side */
+.flip-card-back {
+  background-color:white ;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
+/* hide show*/
+
+#hide{
+  margin-left: 50%;
+outline: 0 !important;
+  padding: 10px 24px;
+  border-radius: 10px;
+  background-color: #f0c9e4;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+#show{
+  margin-left: 50%;
+outline: 0 !important;
+  padding: 8px 21px;
+  border-radius: 10px;
+    background-color: #f0c9e4;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+#hide:hover {
+  background-color: #ed8acf;
+  color: white;
+}
+#show:hover {
+  background-color: #ed8acf;
+  color: white;
+}
+.paragraph
+{
+  font-style: oblique;
+  font-size: 110%;
+  margin-bottom: 15%;
+  padding: 2%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: #f0c9e4;}
+  to {background-color: #ed8acf;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: #f0c9e4;}
+  to {background-color: #ed8acf;}
+}
+/*kam bere ndryshime te transition*/
+#div2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s; /* Safari prior 6.1 */
+  transition: width 2s;
+}
+#div2:hover {
+  width: 300px;
+}
+
+/*Footeri*/
+
+footer section
+{
+    width: 100%;
+    margin-top: 4%;
+    display: inline-flex;;
+}
+footer section div h3
+{
+    color: #fde2cf;
+    font-size: 130%;
+}
+.div1
+{
+    margin-right: 30%;
+    margin-left: 4%;
+}
+.div1 a
+{
+    color: #fde2cf;
+    text-decoration: none;
+}
+footer section div p
+{
+    color: #fde2cf;
+    font-size: 120%;
+}
+footer section div input
+{
+    margin:2%;
+    padding: 5%;
+    color: white;
+
+}
+#sub1{
+    width: 60%;
+    color:#595858;
+    background-color: #fde2cf;
+    border:none;
+    border-radius: 6px;
+    font-size: 130%;
+
+}
+.secfooter
+{
+    background-color: #86bdbf;
+    width: 99.6%;
+    margin-top: 0%;
+    padding: 3px;
+
+}
+#copyright
+{
+    margin-top: 0%;
+
+    color:#595858;
+    font-style: italic;
+    padding-top: 5%;
+    font-size: 90%;
+
+
+}
+#main{
+	padding-top: 5px;
+
+	padding-bottom: 5px;
+
+}
+#end
+{
+    color:#595858;
+   font-style: italic;
+   font-size: 90%;
+
+}
+
+.footer1{
+
+/*    height: 350px;*/
+
+
+}
+
+.link1{
+    text-decoration: none;
+    color: black;
+}
+.invalid {border-color:coral;
+
+                     }
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
+#example3 {
+  border: 10px double black;
+  padding: 30px;
+  background: url(images/example.png);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+
+#grad10
+{
+  height: 150px;
+  width: 200px;
+  margin-left: 60%;
+  margin-top: -35%;
+  background-color: black;
+  background-image: radial-gradient(white, yellow, black);
+}
