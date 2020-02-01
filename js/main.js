@@ -1,4 +1,4 @@
-function validate1()
+-=function validate1()
 {
   var username = document.getElementById('name');
   var useremail = document.getElementById('email');
@@ -13,7 +13,7 @@ function validate1()
   }
 }
 const input_fields = {
-name: 	/^[a-zA-Z0-9]+([a-zA-Z0-9](_|-| )[a-zA-Z0-9])*[a-zA-Z0-9]*$/,
+name: 	/^[a-zA-Z]+$/,
 
 email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
 }
